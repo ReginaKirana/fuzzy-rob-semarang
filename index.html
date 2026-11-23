@@ -113,6 +113,7 @@
   }
   .skenario-grid button small { display: block; font-weight: 400; color: var(--tinta-2); font-size: 12px; }
   .skenario-grid button:hover { border-color: var(--laut-2); }
+  .skenario-grid button:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
   /* ---------- Kartu status + meter ---------- */
   .status {
@@ -447,7 +448,8 @@ const SKENARIO = [
   ['Musim hujan', 'pasang sedang, hujan lebat', 160, 60, 20],
   ['Ekstrem', 'setinggi tanggul, badai', 200, 120, 40],
   ['Rob Mei 2022', 'pasang 210 cm', 210, 10, 25],
-  ['Skenario B', 'contoh hitung manual', 150, 40, 22],
+  ['Skenario A', 'hitung manual pertama', 110, 45, 15],
+  ['Skenario B', 'hitung manual kedua', 150, 40, 22],
 ];
 
 const fmt = (x, d = 2) => x.toLocaleString('id-ID', { minimumFractionDigits: d, maximumFractionDigits: d });
